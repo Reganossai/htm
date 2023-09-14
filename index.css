@@ -1,0 +1,12 @@
+nav a {
+    background-color: white; /* Initial background color */
+    padding: 0px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a.clicked {
+    border-bottom: 5px solid black;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="index.css" />
+   
+  </head>
+  <body>
+    <header>
+        <nav>
+            <a href="index.html" id="home">Home</a>
+            <a href="about.html" id="about">About</a>
+            <a href="contact.html" id="contact">Contact</a>
+            <a href="services.html" id="help">Help</a>
+        </nav>
+    </header>
+
+    <h1>About page</h1>
+
+
+
+
+
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    var currentPage = window.location.href;
+
+    var navLinks = document.querySelectorAll("nav a");
+
+    navLinks.forEach(function(link) {
+        // Check if the link's href matches the current page's URL
+        if (currentPage === link.href) {
+            link.classList.add("clicked");
+        }
+    });
+});
+    </script>
+  </body>
+</html>
