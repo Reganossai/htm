@@ -1,12 +1,77 @@
-nav a {
-    background-color: white; /* Initial background color */
+
+body{
+    width: 100%;
+    margin: 0px;
     padding: 0px;
-    margin: 5px;
+}
+
+
+nav {
+    margin: 0px 0px 0px 900px;
+}
+
+nav a {
+    background-color: white;
+    /* Initial background color */
+    padding: 5px;
+    margin: 0px 10px 0px 10px;
     text-decoration: none;
+    font-size: 20px;
     color: black;
 }
 
 nav a.clicked {
     border-bottom: 5px solid black;
     padding-bottom: 10px;
+}
+
+.icon{
+    display: none;
+}
+
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+
+    body{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .content-home {
+        display: none
+    }
+
+    nav {
+        margin: 0px 0px 0px 0px;
+    }
+
+    nav a {
+        background-color: white;
+        /* Initial background color */
+        padding: 5px;
+        margin: 0px 10px 0px 10px;
+        text-decoration: none;
+        font-size: 50px;
+        color: black;
+    }
+
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .icon{
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 80%;
+    }
+
+
+
+
+
 }
