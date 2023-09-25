@@ -1,5 +1,4 @@
-
-body{
+body {
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -25,16 +24,26 @@ nav a.clicked {
     padding-bottom: 10px;
 }
 
-.icon{
+.icon {
     display: none;
 }
 
+#mobile-menu {
+    display: none;
+    /* Add styles for the mobile menu, e.g., background, positioning, etc. */
+}
+
+
+#mobile-menu-toggle {
+    display: none;
+
+}
 
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
 
-    body{
+    .body {
         width: 100%;
         margin: 0px;
         padding: 0px;
@@ -45,7 +54,10 @@ nav a.clicked {
     }
 
     nav {
+        width: 100%;
+        height: 100px;
         margin: 0px 0px 0px 0px;
+        background-color: lightblue;
     }
 
     nav a {
@@ -59,15 +71,38 @@ nav a.clicked {
     }
 
 
-    .topnav #myLinks {
+    #mobile-menu {
+        display: block;
+        background-color: azure;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #mobile-menu a{
+        font-size: 25px;
+        margin: 10px 0px 10px 20px;
+    }
+
+    #topnav {
         display: none;
     }
 
-    .icon{
+    .zaracho {
+        padding-top: 18px;
+        margin-left: 90%;
+    }
+
+    #mobile-menu-toggle {
+        color: blue;
+        cursor: pointer;
         display: block;
-        position: absolute;
-        top: 5%;
-        left: 80%;
+        font-weight: 700;
+        font-size: 40px;
+
+
     }
 
 
